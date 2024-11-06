@@ -1,8 +1,13 @@
 <script>
+    import { page } from '$app/stores';
     import {items, calcs} from "./lib/adm.js"
 
     function move_to(link) {
         window.location.href = link;
+    }
+
+    function move_to_calc(calc_id) {
+        window.location.href = "/calculators?id=" + calc_id;
     }
 </script>
 
@@ -22,7 +27,7 @@
     <div class="left-t2">
         <p id="calcs-title">Kalkulatorer</p>
         {#each calcs as calc}
-            <div class="nav-obj nav-obj-tight">
+            <div class="nav-obj nav-obj-tight" on:click={move_to_calc(calc["calc-id"])}>
                 <p>{calc.name}</p>
             </div>
         {/each}
@@ -84,7 +89,7 @@
 
 
 #title {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 35px;

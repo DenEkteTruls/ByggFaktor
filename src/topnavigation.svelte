@@ -39,8 +39,8 @@
 
     .tt-l > input {
         width: 250px;
-        height: 30px;
-        border-radius: 10px;
+        height: 35px;
+        border-radius: 15px;
         padding: 0px 40px 0 40px;
         font-family: "poppins", sans-serif;
         font-weight: normal;

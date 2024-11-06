@@ -30,6 +30,6 @@
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-rows: 8% 92%;
+        grid-template-rows: 70px calc(100% - 70px);
     }
 </style>

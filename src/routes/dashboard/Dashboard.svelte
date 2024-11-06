@@ -98,8 +98,8 @@
     .main-container {
         width: 100%;
         height: 100%;
+        max-height: 100%;
         background-color: whitesmoke;
-        max-height: 100vw;
         overflow-y: scroll;
     }
     .container {

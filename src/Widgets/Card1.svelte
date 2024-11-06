@@ -42,8 +42,18 @@
         font-weight: bold;
     }
 
+    #green {
+        color: var(--green);
+    }
+
+    #red {
+        color: var(--red);
+    }
+
     #growth {
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: normal;
+        color: rgba(61, 61, 61, 0.8);
     }
 
     #icon {
